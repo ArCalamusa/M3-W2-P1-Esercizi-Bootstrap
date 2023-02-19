@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- importazione libreria bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<title>Bootstrap demo</title>
+
+<body>
+  <!-- barra di navigazione -->
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MY MUSIC</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menù</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <!---TAG ANCORA NON FUNZIONA-->
+              <a class="#" a href="#">HALL OF FAME</a>
+            </li>
+            <li class="nav-item">
+
+              <a class="hall-of-shame" a href="#">HALL OF SHAME</a>
+            </li>
+
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <br> <!-- si poteva far meglio? mb-5 non funzionava -->
+  <br>
+  <!-- Content responsive -->
+  <div class="container my-5 text-center" style="max-width: 60%;">
+    <h1>Questi sono i miei Album</h1>
+    <br>
+    <p class="lead">Quando si parla di musica, per me, non è mai facile scegliere. <br>
+      Sono cresciuto tra i vinili e le
+      audiocassette dei Beatles, Bee Gees, Franco Battiato, Lucio Battisti, Rino Gaetano e Lucio Dalla, i preferiti di
+      papà... alle superiori ascoltavo molto i 99 posse, CapaRezza, Frankie hi-nrg mc, Cor Veleno, Afterhours, Verdena,
+      Subsonica, Mao e un po' tutta la musica alternativa Italiana ma anche i Queen, RHCP, Ramones, Nirvana. <br>
+      Dovendo scegliere 9 album, quelli che sento più "miei" sono questi (in
+      particolare Enema of the State dei Blink 182, era l'aprile del 2000, frequentavo le superiori, per il mio
+      compleanno i miei
+      compagni di classe me lo regalarono, fin dal primo ascolto fu il mio album preferito!)</p>
+  </div>
+
+  <div class="container my-5">
+    <div class="container text-center">
+      <div class="row my-5">
+
+        <!-- Card Grande Abum preferito -->
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/EnemaOftheSate.jpg" class="card-img-top" alt="coverAlbum">
+                <div class="card-body">
+                  <h5 class="card-title">Enema of the State</h5>
+                  <p class="card-text"><strong>BLINK-182</strong><br>
+                    GENERE: Punk <br>
+                    - 1999 -</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Length 37:49</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Brano</th>
+                    <th scope="col">Durata</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>All The Small Things</td>
+                    <td>2:47</td>
+
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Don't Leave Me</td>
+                    <td>2:24</td>
+
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>What's My Age Again?</td>
+                    <td>2:28</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Aliens Exist</td>
+                    <td>3:13</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Adam's Song</td>
+                    <td>4:10</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>Wendy Clear</td>
+                    <td>2:51</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>Mutt</td>
+                    <td>3:24</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>Dysentery Gary</td>
+                    <td>2:46</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">9</th>
+                    <td>Anthem</td>
+                    <td>3:37</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">10</th>
+                    <td>The Party Song</td>
+                    <td>2:18</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">11</th>
+                    <td>Going Away To College</td>
+                    <td>2:59</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">12</th>
+                    <td>Dumpweed</td>
+                    <td>2:24</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- card -->
+        <div class="container my-5">
+          <div class="container text-center">
+            <div class="row my-5">
+              <!-- prima riga di card -->
+              <!-- 1 -->
+              <div class="col">
+                <div class="card h-100">
+                  <img src="img/californication.jpeg" class="card-img-top" alt="coverAlbum">
+                  <div class="card-body">
+                    <h5 class="card-title">Californication</h5>
+                    <p class="card-text"><strong>RHCP</strong><br>
+                      GENERE: Rock <br>
+                      - 1999 -</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Length 56:17</small>
+                  </div>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="col">
+                <div class="card h-100">
+                  <img src="img/SupertrampBreakfastinAmerica.jpg" class="card-img-top" alt="coverAlbum">
+                  <div class="card-body">
+                    <h5 class="card-title">Breakfast in America</h5>
+                    <p class="card-text"><strong>SUPERTRAMP</strong><br>
+                      GENERE: Pop / soft Rock <br>
+                      - 1979 -</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Length 46:07</small>
+                  </div>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="col">
+                <div class="card h-100">
+                  <img src="img/StickyFingersRollingStone.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Sticky Fingers</h5>
+                    <p class="card-text"><strong>ROLLING STONES</strong><br>
+                      GENERE: Rock <br>
+                      - 1971 -</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Lenght 46:25</small>
+                  </div>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="col">
+                <div class="card h-100">
+                  <img src="img/BeachBoysPetSound.jpg" class="card-img-top" alt="coverAlbum">
+                  <div class="card-body">
+                    <h5 class="card-title">Pet Sound</h5>
+                    <p class="card-text"><strong>THE BEACH BOYS</strong><br>
+                      GENERE: Pop <br>
+                      - 1966 -</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Lenght 36:25</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- seconda riga di card -->
+            <!-- 1 -->
+            <div class="row">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="img/ExOtago_Marassi.jpg" class="card-img-top" alt="coverAlbum">
+                  <div class="card-body">
+                    <h5 class="card-title">Marassi</h5>
+                    <p class="card-text"><strong>EX - OTAGO</strong><br>
+                      GENERE: Indie / Pop <br>
+                      - 2016 -</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Length 37:18</small>
+                  </div>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="col">
+                <div class="card h-100">
+                  <img src="img/Morning Glory.jpg" class="card-img-top" alt="coverAlbum">
+                  <div class="card-body">
+                    <h5 class="card-title">Morning Glory</h5>
+                    <p class="card-text"><strong>OASIS</strong><br>
+                      GENERE: Rock <br>
+                      - 1995 -</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Lenght 50:06</small>
+                  </div>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="col">
+                <div class="card h-100">
+                  <img src="img/KiARadiohead.jpg" class="card-img-top" alt="coverAlbum">
+                  <div class="card-body">
+                    <h5 class="card-title">Kid A</h5>
+                    <p class="card-text"><strong>RADIOHEAD</strong><br>
+                      GENERE: Rock elettronico <br>
+                      - 2000 -</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Length 49:51</small>
+                  </div>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="col">
+                <div class="card h-100">
+                  <img src="img/DepecheModeViolator.jpg" class="card-img-top" alt="coverAlbum">
+                  <div class="card-body">
+                    <h5 class="card-title">Violator</h5>
+                    <p class="card-text"><strong>DEPECHE MODE</strong><br>
+                      GENERE: Rock elettronico <br>
+                      - 1990 -</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Lenght 47:02</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- hall of shame -->
+        <div class="hall-of-shame">
+          <div class="container my-5 text-center" style="max-width: 70%;">
+            <h1>Hall of shame</h1>
+            <div class="container my-5">
+              <div class="container text-center">
+                <div class="row my-5">
+                  <!-- hall of shame card-->
+                  <!-- 1 -->
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="img/imilanesiammazzanoilsabato_1334838982.jpeg" class="card-img-top" alt="coverAlbum">
+                      <div class="card-body">
+                        <h5 class="card-title">I milanesi ammazzano il sabato</h5>
+                        <p class="card-text"><strong>AFTERHOURS</strong><br>
+                          GENERE: Alternative <br>
+                          - 2008 -</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">Length 42:44</small>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="img/ConspiracyOfOne.jpg" class="card-img-top" alt="coverAlbum">
+                      <div class="card-body">
+                        <h5 class="card-title">Conspiracy of One</h5>
+                        <p class="card-text"><strong>OFFSPRING</strong><br>
+                          GENERE: Punk <br>
+                          - 2000 -</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">Length 37:44</small>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 3 -->
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="img/queenmadeinheaven.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Made In Heaven</h5>
+                        <p class="card-text"><strong>QUEEN</strong><br>
+                          GENERE: Rock <br>
+                          - 1995 -</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">Lenght 70:15</small>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 4 -->
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="img/Ramones-adios-0.jpeg" class="card-img-top" alt="coverAlbum">
+                      <div class="card-body">
+                        <h5 class="card-title">¡Adios Amigos!</h5>
+                        <p class="card-text"><strong>RAMONES</strong><br>
+                          GENERE: Punk / Rock <br>
+                          - 1995 -</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">Lenght 33:51</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <table>
+            <tr>
+              <td><img src="img/1.jpg" class="img-thumbnail" alt="..." width="300px" height="300px"></td>
+              <td><img src="img/2.jpeg" class="img-thumbnail" alt="..." width="300px" height="300px"></td>
+              <td><img src="img/3.jpeg" class="img-thumbnail" alt="..." width="300px" height="300px"></td>
+              <td><img src="img/4.jpeg" class="img-thumbnail" alt="..." width="300px" height="300px"></td>
+              <td><img src="img/5.png" class="img-thumbnail" alt="..." width="300px" height="300px"></td>
+            </tr>
+
+            <tr>
+              <td><img src="img/6.jpeg" class="img-thumbnail" alt="..." width="300px" height="300px"></td>
+              <td><img src="img/7.jpg" class="img-thumbnail" alt="..." width="300px" height="300px"></td>
+              <td><img src="img/8.jpg" class="img-thumbnail" alt="..." width="300px" height="300px"></td>
+              <td><img src="img/9.jpeg" class="img-thumbnail" alt="..." width="300px" height="300px"></td>
+              <td><img src="img/10.jpeg" class="img-thumbnail" alt="..." width="300px" height="300px"></td>
+            </tr>
+
+            <tr>
+              <td><img src="img/11.jpg" class="img-thumbnail" alt="..." width="300px" height="300px"></td>
+              <td><img src="img/12.jpg" class="img-thumbnail" alt="..." width="300px" height="300px"></td>
+              <td><img src="img/13.jpeg" class="img-thumbnail" alt="..." width="300px" height="300px"></td>
+              <td><img src="img/14.jpg" class="img-thumbnail" alt="..." width="300px" height="300px"></td>
+              <td><img src="img/15.jpeg" class="img-thumbnail" alt="..." width="300px" height="300px"></td>
+            </tr>
+
+            <tr>
+              <td><img src="img/16.jpeg" class="img-thumbnail" alt="..." width="300px" height="300px"></td>
+              <td><img src="img/17.jpeg" class="img-thumbnail" alt="..." width="300px" height="300px"></td>
+              <td><img src="img/18.jpeg" class="img-thumbnail" alt="..." width="300px" height="300px"></td>
+              <td><img src="img/19.jpeg" class="img-thumbnail" alt="..." width="300px" height="300px"></td>
+              <td><img src="img/20.jpeg" class="img-thumbnail" alt="..." width="300px" height="300px"></td>
+            </tr>
+          </table>
+        </div>
+        <footer class="footy my-5">
+          <a class="top" href="#">Back to top</a>
+        </footer>
+        <!-- modulo JS popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+          </script>
+</body>
+
+</html>
