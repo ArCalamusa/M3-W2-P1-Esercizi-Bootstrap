@@ -16,7 +16,7 @@
   <!-- barra di navigazione -->
   <nav class="navbar navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">MY MUSIC</a>
+      <a class="navbar-brand" href="#"><img src="img/Avatar copia.png" width="auto" height="50px"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
         aria-controls="offcanvasDarkNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -31,12 +31,12 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <!---TAG ANCORA NON FUNZIONA-->
-              <a class="#" a href="#">HALL OF FAME</a>
+              <!---TAG ANCORA hall of fame-->
+              <a class="hall-of-fame" style="text-decoration:none" href="#hall-of-fame">HALL OF FAME</a>
             </li>
+              <!---TAG ANCORA hall of shame-->
             <li class="nav-item">
-
-              <a class="hall-of-shame" a href="#">HALL OF SHAME</a>
+              <a class="hall-of-shame" style="text-decoration:none" href="#hall-of-shame">HALL OF SHAME</a>
             </li>
 
             <form class="d-flex mt-3" role="search">
@@ -56,12 +56,10 @@
     <p class="lead">Quando si parla di musica, per me, non è mai facile scegliere. <br>
       Sono cresciuto tra i vinili e le
       audiocassette dei Beatles, Bee Gees, Franco Battiato, Lucio Battisti, Rino Gaetano e Lucio Dalla, i preferiti di
-      papà... alle superiori ascoltavo molto i 99 posse, CapaRezza, Frankie hi-nrg mc, Cor Veleno, Afterhours, Verdena,
+      papà... <br> alle superiori ascoltavo molto i 99 posse, CapaRezza, Frankie hi-nrg mc, Cor Veleno, Afterhours,
+      Verdena,
       Subsonica, Mao e un po' tutta la musica alternativa Italiana ma anche i Queen, RHCP, Ramones, Nirvana. <br>
-      Dovendo scegliere 9 album, quelli che sento più "miei" sono questi (in
-      particolare Enema of the State dei Blink 182, era l'aprile del 2000, frequentavo le superiori, per il mio
-      compleanno i miei
-      compagni di classe me lo regalarono, fin dal primo ascolto fu il mio album preferito!)</p>
+      Dovendo scegliere 9 album, quelli che sento più "miei" sono questi:</p>
   </div>
 
   <div class="container my-5">
@@ -71,7 +69,7 @@
         <!-- Card Grande Abum preferito -->
         <div class="container text-center">
           <div class="row">
-            <div class="col">
+            <div class="col-12 col-sm-6">
               <div class="card h-100">
                 <img src="img/EnemaOftheSate.jpg" class="card-img-top" alt="coverAlbum">
                 <div class="card-body">
@@ -85,8 +83,8 @@
                 </div>
               </div>
             </div>
-
-            <div class="col">
+            <!--track list enema of the state-->
+            <div class="col-12 col-sm-6">
               <table class="table">
                 <thead>
                   <tr>
@@ -175,12 +173,14 @@
         </div>
 
         <!-- card -->
+        <a name="hall-of-fame"></a>
         <div class="container my-5">
           <div class="container text-center">
-            <div class="row my-5">
+            <h1>HALL OF FAME</h1>
+            <div class="row my-5 row-cols-2 row-cols-sm-4">
               <!-- prima riga di card -->
               <!-- 1 -->
-              <div class="col">
+              <div class="col my-3 my-sm-0"> <!-- spaziatura smartphone -->
                 <div class="card h-100">
                   <img src="img/californication.jpeg" class="card-img-top" alt="coverAlbum">
                   <div class="card-body">
@@ -195,7 +195,7 @@
                 </div>
               </div>
               <!-- 2 -->
-              <div class="col">
+              <div class="col my-3 my-sm-0">
                 <div class="card h-100">
                   <img src="img/SupertrampBreakfastinAmerica.jpg" class="card-img-top" alt="coverAlbum">
                   <div class="card-body">
@@ -210,7 +210,7 @@
                 </div>
               </div>
               <!-- 3 -->
-              <div class="col">
+              <div class="col my-3 my-sm-0">
                 <div class="card h-100">
                   <img src="img/StickyFingersRollingStone.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
@@ -225,7 +225,7 @@
                 </div>
               </div>
               <!-- 4 -->
-              <div class="col">
+              <div class="col my-3 my-sm-0">
                 <div class="card h-100">
                   <img src="img/BeachBoysPetSound.jpg" class="card-img-top" alt="coverAlbum">
                   <div class="card-body">
@@ -241,9 +241,9 @@
               </div>
             </div>
             <!-- seconda riga di card -->
-            <!-- 1 -->
             <div class="row">
-              <div class="col">
+              <!-- 1 -->
+              <div class="col my-3 my-sm-0">
                 <div class="card h-100">
                   <img src="img/ExOtago_Marassi.jpg" class="card-img-top" alt="coverAlbum">
                   <div class="card-body">
@@ -258,7 +258,7 @@
                 </div>
               </div>
               <!-- 2 -->
-              <div class="col">
+              <div class="col my-3 my-sm-0">
                 <div class="card h-100">
                   <img src="img/Morning Glory.jpg" class="card-img-top" alt="coverAlbum">
                   <div class="card-body">
@@ -273,7 +273,7 @@
                 </div>
               </div>
               <!-- 3 -->
-              <div class="col">
+              <div class="col my-3 my-sm-0">
                 <div class="card h-100">
                   <img src="img/KiARadiohead.jpg" class="card-img-top" alt="coverAlbum">
                   <div class="card-body">
@@ -288,7 +288,7 @@
                 </div>
               </div>
               <!-- 4 -->
-              <div class="col">
+              <div class="col my-3 my-sm-0">
                 <div class="card h-100">
                   <img src="img/DepecheModeViolator.jpg" class="card-img-top" alt="coverAlbum">
                   <div class="card-body">
@@ -306,15 +306,16 @@
           </div>
         </div>
         <!-- hall of shame -->
+        <a name="hall-of-shame"></a>
         <div class="hall-of-shame">
-          <div class="container my-5 text-center" style="max-width: 70%;">
-            <h1>Hall of shame</h1>
+          <div class="container my-5 text-center">
+            <h1>HALL OF SHAME</h1>
             <div class="container my-5">
               <div class="container text-center">
-                <div class="row my-5">
+                <div class="row my-5 row-cols-2 row-cols-sm-4">
                   <!-- hall of shame card-->
                   <!-- 1 -->
-                  <div class="col">
+                  <div class="col my-3 my-sm-0">
                     <div class="card h-100">
                       <img src="img/imilanesiammazzanoilsabato_1334838982.jpeg" class="card-img-top" alt="coverAlbum">
                       <div class="card-body">
@@ -329,7 +330,7 @@
                     </div>
                   </div>
                   <!-- 2 -->
-                  <div class="col">
+                  <div class="col my-3 my-sm-0">
                     <div class="card h-100">
                       <img src="img/ConspiracyOfOne.jpg" class="card-img-top" alt="coverAlbum">
                       <div class="card-body">
@@ -344,7 +345,7 @@
                     </div>
                   </div>
                   <!-- 3 -->
-                  <div class="col">
+                  <div class="col my-3 my-sm-0">
                     <div class="card h-100">
                       <img src="img/queenmadeinheaven.jpeg" class="card-img-top" alt="...">
                       <div class="card-body">
@@ -359,7 +360,7 @@
                     </div>
                   </div>
                   <!-- 4 -->
-                  <div class="col">
+                  <div class="col my-3 my-sm-0">
                     <div class="card h-100">
                       <img src="img/Ramones-adios-0.jpeg" class="card-img-top" alt="coverAlbum">
                       <div class="card-body">
@@ -378,43 +379,49 @@
             </div>
           </div>
         </div>
-        <div>
-          <table>
-            <tr>
-              <td><img src="img/1.jpg" alt="coverAlbum" width="250px" height="250px"></td>
-              <td><img src="img/2.jpeg" alt="coverAlbum" width="250px" height="250px"></td>
-              <td><img src="img/3.jpeg" alt="coverAlbum" width="250px" height="250px"></td>
-              <td><img src="img/4.jpeg" alt="coverAlbum" width="250px" height="250px"></td>
-              <td><img src="img/5.png" alt="coverAlbum" width="250px" height="250px"></td>
-            </tr>
 
-            <tr>
-              <td><img src="img/6.jpeg" alt="coverAlbum" width="250px" height="250px"></td>
-              <td><img src="img/7.jpg" alt="coverAlbum" width="250px" height="250px"></td>
-              <td><img src="img/8.jpg" alt="coverAlbum" width="250px" height="250px"></td>
-              <td><img src="img/9.jpeg" alt="coverAlbum" width="250px" height="250px"></td>
-              <td><img src="img/10.jpeg" alt="coverAlbum" width="250px" height="250px"></td>
-            </tr>
-
-            <tr>
-              <td><img src="img/11.jpg" alt="coverAlbum" width="250px" height="250px"></td>
-              <td><img src="img/12.jpg" alt="coverAlbum" width="250px" height="250px"></td>
-              <td><img src="img/13.jpeg" alt="coverAlbum" width="250px" height="250px"></td>
-              <td><img src="img/14.jpg" alt="coverAlbum" width="250px" height="250px"></td>
-              <td><img src="img/15.jpeg" alt="coverAlbum" width="250px" height="250px"></td>
-            </tr>
-
-            <tr>
-              <td><img src="img/16.jpeg" alt="coverAlbum" width="250px" height="250px"></td>
-              <td><img src="img/17.jpeg" alt="coverAlbum" width="250px" height="250px"></td>
-              <td><img src="img/18.jpeg" alt="coverAlbum" width="250px" height="250px"></td>
-              <td><img src="img/19.jpeg" alt="coverAlbum" width="250px" height="250px"></td>
-              <td><img src="img/20.jpeg" alt="coverAlbum" width="250px" height="250px"></td>
-            </tr>
-          </table>
+        <!-- sezione a scomparsa copertine -->
+        <p>
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+            aria-expanded="false" aria-controls="collapseExample">
+            Copertine!
+          </a>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <!-- m=margin p=padding -->
+          <div class="card card-body">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col-xs-6 col-xl-3"><img src="img/1.jpg" alt="coverAlbum" width="250px" height="250px"></div>
+                <div class="col-xs-6 col-xl-3"><img src="img/2.jpeg" alt="coverAlbum" width="250px" height="250px"></div>
+                <div class="col-xs-6 col-xl-3"><img src="img/3.jpeg" alt="coverAlbum" width="250px" height="250px"></div>
+                <div class="col-xs-6 col-xl-3"><img src="img/4.jpeg" alt="coverAlbum" width="250px" height="250px"></div>
+                <div class="col-xs-6 col-xl-3"><img src="img/5.png" alt="coverAlbum" width="250px" height="250px"></div>
+                <div class="col-xs-6 col-xl-3"><img src="img/6.jpeg" alt="coverAlbum" width="250px" height="250px"></div>
+                <div class="col-xs-6 col-xl-3"><img src="img/7.jpg" alt="coverAlbum" width="250px" height="250px"></div>
+                <div class="col-xs-6 col-xl-3"><img src="img/8.jpg" alt="coverAlbum" width="250px" height="250px"></div>
+                <div class="col-xs-6 col-xl-3"><img src="img/9.jpeg" alt="coverAlbum" width="250px" height="250px"></div>
+                <div class="col-xs-6 col-xl-3"><img src="img/10.jpeg" alt="coverAlbum" width="250px" height="250px"></div>
+                <div class="col-xs-6 col-xl-3"><img src="img/11.jpg" alt="coverAlbum" width="250px" height="250px"></div>
+                <div class="col-xs-6 col-xl-3"><img src="img/12.jpg" alt="coverAlbum" width="250px" height="250px"></div>
+                <div class="col-xs-6 col-xl-3"><img src="img/13.jpeg" alt="coverAlbum" width="250px" height="250px"></div>
+                <div class="col-xs-6 col-xl-3"><img src="img/14.jpg" alt="coverAlbum" width="250px" height="250px"></div>
+                <div class="col-xs-6 col-xl-3"><img src="img/15.jpeg" alt="coverAlbum" width="250px" height="250px"></div>
+                <div class="col-xs-6 col-xl-3"><img src="img/16.jpeg" alt="coverAlbum" width="250px" height="250px"></div>
+                <div class="col-xs-6 col-xl-3"><img src="img/17.jpeg" alt="coverAlbum" width="250px" height="250px"></div>
+                <div class="col-xs-6 col-xl-3"><img src="img/18.jpeg" alt="coverAlbum" width="250px" height="250px"></div>
+                <div class="col-xs-6 col-xl-3"><img src="img/19.jpeg" alt="coverAlbum" width="250px" height="250px"></div>
+                <div class="col-xs-6 col-xl-3"><img src="img/20.jpeg" alt="coverAlbum" width="250px" height="250px"></div>
+              </div>
+            </div>
+          </div>
         </div>
+        <!--footer-->
         <footer class="footy my-5">
-          <a class="top" href="#">Back to top</a>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" type="button"><a href="#" style="text-decoration: none; color: white;">Back to top</a></button>
+          </div>
+          <!--<a class="top" href="#">Back to top</a>-->
         </footer>
         <!-- modulo JS popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
