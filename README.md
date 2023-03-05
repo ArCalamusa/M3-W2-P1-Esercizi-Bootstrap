@@ -1,4 +1,4 @@
-# M3-W2-P1-Esercizi-Bootstrap
+# M3-W2-P1-AlbumMusicaliBoostrap
 <!-- Crea una pagina responsive per mostrarci i tuoi album musicali preferiti.
 
 In questa pagina ci sarà una tua piccola biografia, i migliori album della tua vita, i peggiori che hai mai sentito, 
