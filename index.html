@@ -66,7 +66,7 @@
     <div class="container text-center">
       <div class="row my-5">
 
-        <!-- Card Grande Abum preferito -->
+  <!-- Card Grande Abum preferito -->
         <div class="container text-center">
           <div class="row">
             <div class="col-12 col-sm-6">
@@ -172,7 +172,7 @@
           </div>
         </div>
 
-        <!-- card -->
+  <!-- card -->
         <a name="hall-of-fame"></a>
         <div class="container my-5">
           <div class="container text-center">
@@ -306,7 +306,7 @@
             </div>
           </div>
         </div>
-        <!-- hall of shame -->
+  <!-- hall of shame -->
         <a name="hall-of-shame"></a>
         <div class="hall-of-shame">
           <div class="container my-5 text-center">
@@ -381,7 +381,7 @@
           </div>
         </div>
 
-        <!-- sezione a scomparsa copertine -->
+  <!-- sezione a scomparsa copertine -->
         <p>
           <a class="btn btn-primary" style="background-color: #212529; border: none;" data-bs-toggle="collapse" href="#collapseExample" role="button"
             aria-expanded="false" aria-controls="collapseExample">
@@ -433,41 +433,26 @@
             </div>
           </div>
         </div>
-        <!--footer-->
-        <footer class="footy my-1">
-          <div class="d-grid gap-2 col-6 mx-auto">
-            <button class="btn btn-primary" style="background-color: #212529; border: none;" type="button"><a href="#" style="text-decoration: none; color: white;">Back
-                to top</a></button>
-          </div>
-          <!--<a class="top" href="#">Back to top</a>-->
-        </footer>
+  <!--footy-->
+  <footer>
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-muted">© 2023 D3 W2-P1</p>
+
+        <a href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Back to top!</a></li>
+        </ul>
+      </footer>
+    </div>
+  </footer>
         <!-- modulo JS popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
           </script>
-        <!--da modificare-->
-        <script>
-          function searchSite() {
-            // Otteniamo il valore inserito dall'utente nella casella di ricerca
-            var input = document.getElementById("search-input").value.toLowerCase();
-            // Otteniamo tutti gli elementi della pagina che contengono del testo
-            var items = document.querySelectorAll("body *:not(script):not(style):not(meta)");
-            // Cicliamo attraverso gli elementi e nascondiamo quelli che non corrispondono alla ricerca
-            for (var i = 0; i < items.length; i++) {
-              var item = items[i];
-              // Ignoriamo gli elementi che non contengono testo visibile, come immagini
-              if (item.offsetWidth > 0 || item.offsetHeight > 0) {
-                // Convertiamo il testo dell'elemento in minuscolo per effettuare una ricerca case-insensitive
-                var text = item.textContent.toLowerCase();
-                if (text.indexOf(input) === -1) {
-                  item.style.display = "none";
-                } else {
-                  item.style.display = "";
-                }
-              }
-            }
-          }
-        </script>
 </body>
 
 </html>
